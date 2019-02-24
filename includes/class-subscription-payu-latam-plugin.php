@@ -52,6 +52,7 @@ class Subscription_Payu_Latam_SPL_Plugin
         $this->file = $file;
         $this->version = $version;
         $this->name = $name;
+        $this->supports = array( 'subscriptions', 'products' );
         // Path.
         $this->plugin_path   = trailingslashit( plugin_dir_path( $this->file ) );
         $this->plugin_url    = trailingslashit( plugin_dir_url( $this->file ) );
